@@ -17,7 +17,7 @@ for column in range(columns):
         print(row, column)
         top = row * piece_height
         left = column * piece_width
-        print(left, top, left + piece_width, top + piece_height)
+        #print(left, top, left + piece_width, top + piece_height)
         piece_image = original_image.crop((left, top, left + piece_width, top + piece_height))
         #piece_image.show()
         piece_image.save(f"{output_location}/{row}{column}.png")
