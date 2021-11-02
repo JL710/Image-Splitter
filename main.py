@@ -20,4 +20,4 @@ for column in range(columns):
         #print(left, top, left + piece_width, top + piece_height)
         piece_image = original_image.crop((left, top, left + piece_width, top + piece_height))
         #piece_image.show()
-        piece_image.save(f"{output_location}/{row}{column}.png")
+        piece_image.save(f"{output_location}/{column}{row}.png")
